@@ -1,15 +1,15 @@
-const btn = document.querySelector('button');
-/* let isPurple = false;
+const lis = document.querySelectorAll('li');
 
-btn.addEventListener('click', function () {
-	if (isPurple) {
-		document.body.style.backgroundColor = 'white';
-	} else {
-		document.body.style.backgroundColor = 'purple';
-	}
-	isPurple = !isPurple;
-}); */
+for (let i = 0; i < lis.length; i++) {
+	lis[i].addEventListener('mouseover', function () {
+		this.classList.add('selected');
+	});
+	
+	lis[i].addEventListener('mouseout', function () {
+		this.classList.remove('selected');
+	});
 
-btn.addEventListener('click', function () {
-		document.body.classList.toggle('purple');
-});
+	lis[i].addEventListener('click', function () {
+		this.classList.toggle('done');
+	});
+}
