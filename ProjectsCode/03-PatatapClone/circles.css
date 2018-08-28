@@ -9,3 +9,26 @@ body, html {
 	height: 100%;
 	overflow: hidden;
 }
+
+#hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  #hint .message {
+    display: inline-block;
+    background: white;
+    color: #666666;
+    font-family: "Lucida Grande", verdana, sans-serif;
+    font-size: 12px;
+    line-height: 32px;
+    border-radius: 10.56px;
+    padding: 0 16px; }
+    @media (max-width: 400px) {
+      #hint .message {
+        font-size: 10px; } }
